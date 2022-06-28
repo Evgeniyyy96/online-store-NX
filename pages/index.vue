@@ -4,6 +4,7 @@ const { data } = await useFetch('/api/products')
 
 <template>
   <div class="container">
+    <router-view></router-view>
     <div class="row">
       <div v-for="(product, index) in data"
            :key="'product-'+index"
@@ -12,6 +13,7 @@ const { data } = await useFetch('/api/products')
           <img :src="product.photoURL" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">
+              <NuxtLink to="/sneakers/" >{{ product.name }}</NuxtLink>
               {{ product.name }}
             </h5>
             <p calass="card-text">

@@ -7,9 +7,11 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.4"
+    "nuxt": "^3.0.0-rc.4"
   },
   "dependencies": {
-    "firebase-admin": "^11.0.0"
+    "@nuxtjs/router": "^1.7.0",
+    "firebase-admin": "^11.0.0",
+    "vue-router": "^4.0.16"
   }
 }
