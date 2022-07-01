@@ -20,9 +20,9 @@
                                 {{ product.description }}
                             </p>
                             <div class="d-grid">
-                                <button @click.prevent="addToCart(product)" class="btn btn-outline-primary">
+                                <v-btn @click.prevent="addToCart(product)" class="btn btn-outline-primary">
                                     Add to cart
-                                </button>
+                                </v-btn>
                             </div>
                         </div>
                     </div>

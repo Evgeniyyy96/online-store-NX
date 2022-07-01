@@ -2,9 +2,9 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
       <div class="container-fluid">
-        <NuxtLink to="/" class="navbar-brand">
+        <nuxt-link to="/" class="navbar-brand">
           Online Store
-        </NuxtLink>
+        </nuxt-link>
 
         <button
             class="navbar-toggler"
@@ -20,6 +20,11 @@
               <NuxtLink to="/" class="nav-link" active-class="active">
                 Home
               </NuxtLink>
+            </li>
+            <li class="nav-item">
+              <nuxt-link to="/sneakers" class="nav-link">
+                Sneakers
+              </nuxt-link>
             </li>
           </ul>
           <div class="d-flex">

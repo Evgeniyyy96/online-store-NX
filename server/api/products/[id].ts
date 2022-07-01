@@ -1,4 +1,4 @@
-import { db } from '@/plugin/firebaseInit.js'
+import { db } from '~/helpers/firebaseInit.js'
 
 export default async (request, response) => {
     const doc = await db.collection('products').doc(request.context.params.id).get()

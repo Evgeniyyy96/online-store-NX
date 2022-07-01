@@ -18,6 +18,10 @@ export default defineNuxtConfig({
     components: {
         global: true,
         dirs: ['~/components']
+    },
+    css: ['vuetify/lib/styles/main.sass'],
+    build: {
+        transpile: ['vuetify'],
     }
 
 })
