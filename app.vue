@@ -8,6 +8,6 @@
 import TheNavbar from "./components/TheNavbar";
 import ShoppingCart from "./components/ShoppingCart";
 export default {
-  components: {ShoppingCart, TheNavbar}
+  components: { ShoppingCart, TheNavbar}
 }
 </script>

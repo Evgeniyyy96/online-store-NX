@@ -13,8 +13,7 @@ const { data } = await useFetch('/api/products')
           <img :src="product.photoURL" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">
-              <NuxtLink to="/sneakers/" >{{ product.name }}</NuxtLink>
-              {{ product.name }}
+              <NuxtLink :to="`/sneakers/${ product.uuid }`" class="nav-link" active-class="active">{{ product.name }}</NuxtLink>
             </h5>
             <p calass="card-text">
               {{ product.description }}
