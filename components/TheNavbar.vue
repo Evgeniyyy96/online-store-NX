@@ -28,7 +28,7 @@
             </li>
           </ul>
           <div class="d-flex">
-            <button
+            <v-btn
                 class="btn btn-primary"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -36,7 +36,7 @@
                 aria-controls="offcanvasRight"
             >
               Shopping cart
-            </button>
+            </v-btn>
           </div>
         </div>
       </div>
