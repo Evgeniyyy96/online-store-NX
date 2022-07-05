@@ -7,7 +7,10 @@
           color="black"
           prominent
       >
-        <v-toolbar-title>Puma</v-toolbar-title>
+<!--        <v-toolbar-title>Puma</v-toolbar-title>-->
+        <v-img
+            src="/icons/logo.png">
+        </v-img>
         <v-spacer></v-spacer>
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" icon="mdi-cart-outline"></v-app-bar-nav-icon>
 
