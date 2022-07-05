@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-10">
       <div class="container-fluid">
         <nuxt-link to="/" class="navbar-brand">
           Online Store
@@ -34,12 +34,19 @@
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight"
+
             >
               Shopping cart
             </v-btn>
           </div>
         </div>
       </div>
+
     </nav>
   </div>
 </template>
+
+
+<script>
+
+</script>

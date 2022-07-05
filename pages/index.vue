@@ -1,4 +1,6 @@
 <script setup>
+  import TheNavbar from "../components/TheNavbar";
+
   const {data} = await useFetch('/api/products')
 </script>
 

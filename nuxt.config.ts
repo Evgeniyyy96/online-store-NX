@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -22,6 +23,6 @@ export default defineNuxtConfig({
     css: ['vuetify/lib/styles/main.sass'],
     build: {
         transpile: ['vuetify'],
-    }
+    },
 
 })
