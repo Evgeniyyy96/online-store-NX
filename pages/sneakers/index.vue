@@ -1,14 +1,7 @@
-<script setup>
-  const {data} = await useFetch('/api/products')
-</script>
-
 <template>
-    <div class="container">
-        <router-view></router-view>
-        <v-row >
-            <div v-for="(product, index) in data"
-                 :key="'product-'+index"
-                 class="col-md-4">
+    <v-container class="my-10">
+        <v-row>
+            <v-col v-for="(product, index) in data" :key="'product-'+index" cols="12" md="4">
                 <nuxt-link :to="`/sneakers/${ product.uuid }`" class="nav-link" active-class="active">
                     <div class="card mb-3">
                         <img :src="product.photoURL" class="card-img-top">
@@ -20,29 +13,28 @@
                                 {{ product.description }}
                             </p>
                             <div class="d-grid">
-                                <button @click.prevent="addToCart(product)" class="btn btn-outline-primary">
+                                <v-btn @click.prevent="addToCart(product)" class="btn btn-outline-primary">
                                     Add to cart
-                                </button>
+                                </v-btn>
                             </div>
                         </div>
                     </div>
                 </nuxt-link>
-            </div>
+            </v-col>
         </v-row>
-
-        <v-row>{{shoppingCart}}</v-row>
-    </div>
+    </v-container>
 </template>
+
+<script setup>
+  import { store } from '@/store/index.js'
+  const {data} = await useFetch('/api/products')
+</script>
 
 <script>
   export default {
-    data() {
-      return {
-        shoppingCart: []
-      }
-    },
+    name: 'MainPage',
     mounted() {
-      this.shoppingCart = JSON.parse(localStorage.getItem('shoppingCart') || "[]");
+      this.store.shoppingCart = JSON.parse(localStorage.getItem('shoppingCart') || "[]");
     },
     watch: {
       shoppingCart: {
@@ -54,7 +46,7 @@
     methods: {
       addToCart(product) {
         let exists = false;
-        for (const cartItem of this.shoppingCart) {
+        for (const cartItem of this.store.shoppingCart) {
           if (cartItem.uuid === product.uuid) {
             cartItem.amount = cartItem.amount + 1;
             exists = true;
@@ -63,16 +55,11 @@
         }
 
         if (!exists) {
-          this.shoppingCart.push({
+          this.store.shoppingCart.push({
             ...product,
             amount: 1,
           })
         }
-      }
-    },
-    computed: {
-      shoppingCart () {
-        return this.$store.state.shoppingCart
       }
     }
   }

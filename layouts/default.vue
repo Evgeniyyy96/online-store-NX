@@ -1,8 +1,12 @@
 <template>
   <div>
-    <shopping-cart />
-<!--    <NuxtPage />-->
-<!--    <TheNavbar />-->
-    <slot />
+    <v-app>
+      <v-layout>
+        <layout-header />
+        <v-main>
+          <slot />
+        </v-main>
+      </v-layout>
+    </v-app>
   </div>
 </template>

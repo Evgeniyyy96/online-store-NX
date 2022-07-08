@@ -1,0 +1,26 @@
+@import 'params';
+
+@supports not (-webkit-touch-callout: none) {
+  html{
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    ::-webkit-scrollbar-button {
+      display:none;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #babac0;
+      border-radius: 16px;
+      border: none;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    ::-webkit-scrollbar {
+      background-color: #F7F8FA;
+      width: 4px;
+    }
+  }
+}
+
+html body .v-application {
+}

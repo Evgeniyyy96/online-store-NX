@@ -1,0 +1,70 @@
+@import 'params';
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf');
+}
+
+@font-face {
+  font-family: 'MyriadProCond';
+  src: url('../fonts/MyriadPro/MyriadProCond.ttf');
+}
+
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url('../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf');
+}
+
+@font-face {
+  font-family: 'MyriadProBoldCond';
+  src: url('../fonts/MyriadPro/MyriadProBoldCond.ttf');
+}
+
+@font-face {
+  font-family: 'MyriadProSemiBold';
+  src: url('../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.ttf');
+}
+
+html body .v-application {
+  font-family: $body-font;
+  color: $body-text !important;
+  font-size: $font-size !important;
+  line-height: 1.25rem !important;
+
+  h1{
+    font-family: $headings;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2{
+    font-family: $headings;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    color: $body-text;
+    font-weight: 400;
+  }
+  h3{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  h4{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+  }
+  h5{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: $body-text;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 960px) {
+}

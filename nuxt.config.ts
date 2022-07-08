@@ -8,6 +8,13 @@ export default defineNuxtConfig({
             {
                 rel: 'stylesheet',
                 href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://db.onlinewebfonts.com/c/b7b4038ef6eda894206267b3c57fc1eb?family=Sabon+LT+W01',
+                media: 'print',
+                onload: 'this.media=\'all\'',
+                crossorigin: true
             }
         ],
         script: [
@@ -16,11 +23,14 @@ export default defineNuxtConfig({
             }
         ]
     },
+    css: [
+        '@/assets/style/base.scss',
+        'vuetify/lib/styles/main.sass'
+    ],
     components: {
         global: true,
         dirs: ['~/components']
     },
-    css: ['vuetify/lib/styles/main.sass'],
     build: {
         transpile: ['vuetify'],
     },
