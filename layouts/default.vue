@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-shoppingcart />
+    <shopping-cart />
 <!--    <NuxtPage />-->
 <!--    <TheNavbar />-->
     <slot />

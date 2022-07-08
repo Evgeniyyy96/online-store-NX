@@ -32,12 +32,7 @@
       >
 <!--        <v-toolbar-title>Puma</v-toolbar-title>-->
         <v-avatar rounded="1">
-        <v-img
-
-            src="/icons/logo.png"
-            contain
-
-        >
+            <v-img src="/public/images/logo.png" contain>
         </v-img>
         </v-avatar>
         <v-spacer></v-spacer>

@@ -1,6 +1,4 @@
 <script setup>
-  import TheNavbar from "../components/TheNavbar";
-
   const {data} = await useFetch('/api/products')
 </script>
 
@@ -31,8 +29,6 @@
                 </nuxt-link>
             </div>
         </div>
-
-        <shopping-cart v-model="shoppingCart"/>
     </div>
 </template>
 
