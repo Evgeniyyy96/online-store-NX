@@ -1,7 +1,7 @@
 
 
 export const state = () => ({
-    shoppingCart: []
+    vshoppingCart: []
 })
 
 
@@ -12,7 +12,7 @@ export const getters = {
 
 export const mutations = {
     ADD_TO_CART (state, payload) {
-        state.shoppingCart.push(payload)
+        state.vshoppingCart.push(payload)
     }
 
 }
